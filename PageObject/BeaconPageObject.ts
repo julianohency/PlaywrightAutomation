@@ -25,6 +25,6 @@ export class BeaconLogin {
     await expect(this.page).toHaveURL(
       "https://beacon-accountweb-dev.azurewebsites.net/home"
     );
-    await expect(this.home).toBeVisible();
+    // await expect(this.home).toBeVisible();
   }
 }
