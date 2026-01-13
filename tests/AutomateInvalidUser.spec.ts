@@ -8,10 +8,10 @@ test("Login - Invalid User", async ({ page }) => {
   await loginpage.NavLogin();
 
   // Step 2: Enter Invalid User Name
-  await loginpage.email.fill("FacilityGroup@mailinator.com");
+  await loginpage.email.fill("FacilityGroup5@mailinator.com");
 
   // Step 3: Enter Invalid Password
-  await loginpage.password.fill("abcdE@1234");
+  await loginpage.password.fill("abcdE@12345");
 
   // Step 3: Click Login Button
   await loginpage.login.click();
