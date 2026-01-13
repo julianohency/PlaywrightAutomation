@@ -17,5 +17,5 @@ test("Login - Invalid User", async ({ page }) => {
   await loginpage.login.click();
 
   // Step 5: Verifying Invalid Login Ateemp --Assertion or Expected Result
-  await expect(loginpage.loginassert).toBeVisible();
+  await expect(loginpage.loginassert).toHaveText("Invalid login attempt.");
 });

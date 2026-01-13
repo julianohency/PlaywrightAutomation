@@ -14,7 +14,8 @@ export class BeaconLogin {
     this.password = page.locator("#password");
     this.login = page.locator("#btn-accounts-login");
     this.home = page.getByText("Home").first();
-    this.loginassert = page.locator("p", { hasText: "Invalid login attempt." });
+    this.loginassert = page.locator("#notistack-snackbar");
+    //this.loginassert = page.locator("p", { hasText: "Invalid login attempt." });
   }
   async NavLogin() {
     await this.page.goto(
